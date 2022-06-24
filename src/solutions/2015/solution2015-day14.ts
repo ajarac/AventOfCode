@@ -52,7 +52,7 @@ export class Solution2015Day14 extends Solution {
         for (const fly of flyes) {
             map.set(fly.name, 0);
         }
-        let lastWinner = 0;
+        
         for (let i = 1; i <= 2503; i++) {
             let winner = 0;
             let max = 0;
@@ -67,7 +67,7 @@ export class Solution2015Day14 extends Solution {
             map.set(name, map.get(name) + 1);
         }
         let max = 0;
-        for (let value of map.values()) {
+        for (const value of map.values()) {
             max = Math.max(max, value);
         }
         return max.toString();

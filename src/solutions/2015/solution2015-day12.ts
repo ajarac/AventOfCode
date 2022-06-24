@@ -25,7 +25,7 @@ export class Solution2015Day12 extends Solution {
         },
         [Type.Array]: (data, avoid: string) => {
             let result = 0;
-            for (let item of data) {
+            for (const item of data) {
                 result += this.calculate(item, avoid);
             }
             return result;

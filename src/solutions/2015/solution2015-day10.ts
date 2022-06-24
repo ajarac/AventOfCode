@@ -25,7 +25,7 @@ export class Solution2015Day10 extends Solution {
     }
 
     private process(list: number[]): number[] {
-        let result = [];
+        const result = [];
         let index = 0;
 
         while (index < list.length) {

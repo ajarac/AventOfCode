@@ -1,6 +1,5 @@
-import { Solution } from '../../utils/solution';
 import { MD5 } from 'crypto-js';
-
+import { Solution } from '../../utils/solution';
 
 export class Solution2015Day4 extends Solution {
     constructor() {
@@ -9,7 +8,7 @@ export class Solution2015Day4 extends Solution {
 
     solvePart1(data: string): string {
         let index = 0;
-        let secret = data.trim();
+        const secret = data.trim();
         while (!this.isValidHash(secret, index, 5)) {
             index++;
         }
@@ -18,7 +17,7 @@ export class Solution2015Day4 extends Solution {
 
     solvePart2(data: string): string {
         let index = 0;
-        let secret = data.trim();
+        const secret = data.trim();
         while (!this.isValidHash(secret, index, 6)) {
             index++;
         }

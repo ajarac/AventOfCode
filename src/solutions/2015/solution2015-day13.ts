@@ -31,7 +31,7 @@ export class Solution2015Day13 extends Solution {
     private calculateHappiness(mapSitting: MapSitting): string {
         const totalPersons = Object.keys(mapSitting).length;
         let result = 0;
-        let personSitted = new Set();
+        const personSitted = new Set();
         const backTracking = (person: string, firstPerson: string, counter: number) => {
             if (personSitted.has(person)) {
                 return;
